@@ -10,5 +10,9 @@ app.get('/', (req, res) => {
     res.send('Está es la app de Ejemplo');
 });
 
+app.get('/info', (req, res) => {
+    res.send('Versión x.0');
+});
+
 app.listen(PORT, HOST);
 console.log('Funcionando');
